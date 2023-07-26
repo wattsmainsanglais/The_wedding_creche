@@ -1,0 +1,15 @@
+{
+  "name": "the_wedding_creche",
+  "version": "1.0.0",
+  "description": "Business homepage for the wedding creche",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "The_wedding_creche/.git/"
+  },
+  "author": "Awattsdev",
+  "license": "ISC"
+}
