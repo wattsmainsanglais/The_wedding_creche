@@ -12,5 +12,103 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
+    
+}
 
+
+nav{
+    grid-column: 1 / span 3;
+    grid-row: 1 / 2;
+}
+
+#splash{
+    grid-column: 1 / span 3;
+    grid-row: 2/ 3;
+}
+
+#about{
+    grid-column: 1 / span 3;
+    grid-row: 3 / 4;
+}
+
+/* Gallery CSS */
+#gallery{
+    grid-column: 1 / span 3;
+    grid-row: 3 / 4;
+  
+
+}
+
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+.gallery-container{
+
+    width: 90%;
+    display: flex; 
+    overflow-x: scroll;
+    
+    
+}
+
+.gallery-container::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-container div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+
+  }
+  
+.gallery-container div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: 0.5s;
+    
+}
+
+.gallery-container div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#nextBtn #backBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+
+#nextBtn:hover, #backBtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+
+#reviews{
+    grid-column: 1 / span 3;
+    grid-row: 5 / 6;
+}
+
+
+#contact{
+    grid-column: 1 / span 3;
+    grid-row: 6 / 7;
+}
+
+footer{
+    grid-column: 1 / span 3;
+    grid-row: 7 / 8;
 }
