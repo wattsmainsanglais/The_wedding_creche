@@ -11,5 +11,13 @@
     "url": "The_wedding_creche/.git/"
   },
   "author": "Awattsdev",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.4",
+    "validator": "^13.9.0"
+  }
 }
