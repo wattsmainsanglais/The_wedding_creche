@@ -4,23 +4,24 @@ require('dotenv').config;
 const bodyParser = require ('body-parser')
 
 const nodemailer = require('nodemailer');
-const sendMail = require('./serverJs/sendmail');
+const sendMail = require('./Private/serverJs/sendmail');
 const validator = require('validator');
 
 const port = process.env.PORT || 4000;
 
-app.use(express.static('../Public/'));
-app.engine('html', require('ejs').renderFile);
+app.use(express.static('views'))
+
 app.set('view engine', 'ejs');
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.get('/', (req, res) => {
-    res.render('index');
+    
+    res.render('../views/index');
 });
 
-app.post('contact', (req, res, next) =>{
+app.post('/contact', (req, res, next) =>{
 
 })
 

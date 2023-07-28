@@ -7,7 +7,7 @@ body{
 
 }
 
-.overlay{
+#overlay{
     
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -103,8 +103,9 @@ nav{
 }
 
 
+
 #contact{
-    grid-column: 1 / span 3;
+    grid-column: 2 / span 1;
     grid-row: 6 / 7;
 }
 
@@ -112,3 +113,27 @@ footer{
     grid-column: 1 / span 3;
     grid-row: 7 / 8;
 }
+
+.wattsLink {
+    font-family: 'Genos', sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    
+
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #654de9; /* the color */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#6b59d4d2 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+  }
+  .wattsLink:hover {
+    cursor: url;
+    --_p: 100%;
+    --_s: .3s;
+  }
