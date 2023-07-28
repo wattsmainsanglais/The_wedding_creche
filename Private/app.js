@@ -4,6 +4,7 @@ require('dotenv').config;
 const bodyParser = require ('body-parser')
 
 const nodemailer = require('nodemailer');
+const sendMail = require('./serverJs/sendmail');
 const validator = require('validator');
 
 const port = process.env.PORT || 4000;
@@ -20,7 +21,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('contact', (req, res, next) =>{
-    
+
 })
 
 app.listen(port, () => {
