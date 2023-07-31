@@ -22,19 +22,35 @@ nav{
 }
 
 #splash{
-    grid-column: 1 / span 3;
+    grid-column: 2 / span 1;
     grid-row: 2/ 3;
 }
 
-#about{
+#what-we-do{
     grid-column: 1 / span 3;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
 }
 
-/* Gallery CSS */
+#meet-us{
+    grid-column: 1 / span 3;
+    grid-row: 5 / 6;
+}
+
+#reviews{
+    grid-column: 1 / span 3;
+    grid-row: 6 / 7;
+}
+
+#faq{
+    grid-column: 1 / span 3;
+    grid-row: 7/ 8;
+
+}
+
+/* Gallery + WHAT WE DO (scroller) CSS */
 #gallery{
     grid-column: 1 / span 3;
-    grid-row: 3 / 4;
+    grid-row: 8 / 9;
   
 
 }
@@ -97,21 +113,18 @@ nav{
 
 
 
-#reviews{
-    grid-column: 1 / span 3;
-    grid-row: 5 / 6;
-}
+
 
 
 
 #contact{
     grid-column: 2 / span 1;
-    grid-row: 6 / 7;
+    grid-row: 9 / 10;
 }
 
 footer{
     grid-column: 1 / span 3;
-    grid-row: 7 / 8;
+    grid-row: 10 / 11;
 }
 
 .wattsLink {
