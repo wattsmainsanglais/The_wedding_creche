@@ -1,14 +1,21 @@
 
 
-let scrollcontainer = document.querySelector('.gallery-container');
+let scrollcontainer = document.querySelectorAll(".gallery-container");
 let backBtn = document.getElementById('backBtn');
 let nextBtn = document.getElementById('nextBtn');
 
-scrollcontainer.addEventListener('wheel', (e) => {
+
+
+for(let i= 0 ; i < scrollcontainer.length; i++){
+    let item = scrollcontainer[i];
+   
+    item.addEventListener('wheel', (e) => {
     e.preventDefault();
-    scrollcontainer.scrollLeft += e.deltaY
-    scrollcontainer.style.scrollBehavior = 'auto';
-})
+    item.scrollLeft += e.deltaY
+    item.style.scrollBehavior = 'auto';
+    })
+}
+
 
 nextBtn.addEventListener('click', ()=> {
     scrollcontainer.style.scrollBehavior = 'smooth';
