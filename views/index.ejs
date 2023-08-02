@@ -24,6 +24,10 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Genos&amp;display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -181,7 +185,7 @@
 
     <section id="contact">
       <div class="form-wrapper">
-        <form id="contactForm">
+        <form id="contactForm" method="post" action="contact">
           <h2>Please use this form to contact us</h2>
 
           <label for="name">Name</label><br>
@@ -202,8 +206,20 @@
 
           
         </form>
-        <button type="submit" form="contactForm" value="submit">Submit</button>
+        <button id=contact-button type="submit" form="contactForm" value="submit">Submit</button>
 
+      </div>
+      <div id="modal" class="modal">
+
+        <div id='modal-content' class="modal-content">
+          <aside class="modal-img">
+              <img src="" >
+          </aside>
+          <p  id="modal-p">
+              
+          </p>
+          <span id='close-modal' class="close-modal">&times;</span>
+      </div>
       </div>
       
     </section>

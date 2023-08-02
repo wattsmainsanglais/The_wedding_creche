@@ -22,9 +22,13 @@ app.get('/', (req, res) => {
 });
 
 app.post('/contact', (req, res, next) =>{
+    console.log(req.body);
+
+    res.status(201).send('Thanks');
 
 })
 
 app.listen(port, () => {
     console.log('Server is listening on Post 4000');
+
 })
