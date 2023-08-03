@@ -185,23 +185,23 @@
 
     <section id="contact">
       <div class="form-wrapper">
-        <form id="contactForm" method="post" action="contact">
+        <form id="contactForm" method="post" action="/contact">
           <h2>Please use this form to contact us</h2>
 
           <label for="name">Name</label><br>
-          <input name="name" type="text" class="inputfield" required>
+          <input id="name" name="name" type="text" class="inputfield" required>
           <br>
 
           <label for="telephone">Telephone</label><br>
-          <input name="telephone" type="number" class="inputfield" required>
+          <input id='telephone' name="telephone" type="number" class="inputfield" required>
           <br>
 
           <label for="email">Email</label><br>
-          <input name="email" type="email" class="inputfield" required>
+          <input id="email" name="email" type="email" class="inputfield" required>
           <br>
 
           <label for="message">Message</label><br>
-          <textarea class="inputfield" name="message" value="Please type your message here" cols="50" rows="15" required></textarea>
+          <textarea id="message" class="inputfield" name="message" value="Please type your message here" cols="50" rows="15" required></textarea>
           <br>
 
           

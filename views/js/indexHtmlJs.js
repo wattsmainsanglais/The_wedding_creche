@@ -1,4 +1,8 @@
 
+
+
+
+
 // JS for scrolling gallery 
 let scrollcontainer = document.querySelectorAll(".gallery-container");
 let backBtn = document.getElementById('backBtn');
@@ -27,15 +31,83 @@ backBtn.addEventListener('click', ()=> {
     scrollcontainer.scrollLeft -= 600;
 })
 
+//Js for contact form api/post details
+
+urlContact = 'http://localhost:4000/contact'
+let modalContainer = document.getElementById('modal-p')
+let modalDiv= document.getElementById('modal');
+
+const postContactForm = async (name, tel, email, message) => {
+
+    modalContainer.innerText = ''
+
+    const data = JSON.stringify({
+        'name': name,
+        'telephone': tel,
+        'email': email,
+        'message': message
+    })
+
+    try{
+        const response = await fetch(urlContact, {
+            method: 'POST',
+            credentials: 'include',
+            body: data,
+
+            headers: {
+                'Content-type': 'application/json',  
+            }
+        })
+
+       
+        if(response.ok){
+            const jsonResponse = await response.json();
+            modalContainer.innerText = jsonResponse;
+           
+        } else {
+            modalContainer.innerText = 'Problem with server'
+        }
+
+    }
+
+    catch(error){
+
+        console.log('There is an error...', error);
+        modalContainer.innerText = error
+
+    }
+
+   
+    modalDiv.style.display = 'block';
+
+}
+
+// function to clear form after post
+function clearData(){
+    document.getElementById('contactForm').reset();
+  }
+  
+
 //JS for contact button/ modal message
 
 const contactButton = document.getElementById('contact-button')
-const modalDiv= document.getElementById('modal');
+
 const closeButton = document.getElementById('close-modal');
 
+
 contactButton.addEventListener('click', (e) =>{
+    const name = document.getElementById('name').value;
+    const tel = document.getElementById('telephone').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
     e.preventDefault();
-    modalDiv.style.display = 'block';
+    
+ 
+   
+    postContactForm(name, tel, email, message);
+    clearData();
+    
 
 })
 

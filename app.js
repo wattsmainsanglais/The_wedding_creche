@@ -24,7 +24,8 @@ app.get('/', (req, res) => {
 app.post('/contact', (req, res, next) =>{
     console.log(req.body);
 
-    res.status(201).send('Thanks');
+    let msg = JSON.stringify('Thanks ' + req.body.name + ' email has been sent to ' + req.body.email)
+    res.status(201).send(msg);
 
 })
 
