@@ -2,7 +2,7 @@
   "name": "the_wedding_creche",
   "version": "1.0.0",
   "description": "Business homepage for the wedding creche",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

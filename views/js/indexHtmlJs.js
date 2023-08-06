@@ -31,6 +31,11 @@ backBtn.addEventListener('click', ()=> {
     scrollcontainer.scrollLeft -= 600;
 })
 
+// function to clear form after post
+function clearData(){
+    document.getElementById('contactForm').reset();
+  }
+
 //Js for contact form api/post details
 
 urlContact = 'http://localhost:4000/contact'
@@ -63,6 +68,7 @@ const postContactForm = async (name, tel, email, message) => {
         if(response.ok){
             const jsonResponse = await response.json();
             modalContainer.innerText = jsonResponse;
+            clearData();
            
         } else {
             modalContainer.innerText = 'Problem with server'
@@ -82,10 +88,7 @@ const postContactForm = async (name, tel, email, message) => {
 
 }
 
-// function to clear form after post
-function clearData(){
-    document.getElementById('contactForm').reset();
-  }
+
   
 
 //JS for contact button/ modal message
@@ -102,13 +105,9 @@ contactButton.addEventListener('click', (e) =>{
     const message = document.getElementById('message').value;
 
     e.preventDefault();
-    
- 
    
     postContactForm(name, tel, email, message);
-    clearData();
-    
-
+   
 })
 
 closeButton.addEventListener('click', () =>{

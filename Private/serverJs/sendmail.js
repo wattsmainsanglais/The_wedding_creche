@@ -2,7 +2,7 @@ const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 
-function sendMail(email, token){
+function sendMail(name, tel, email, message){
 
     let transporter = nodemailer.createTransport({
         host: process.env.HOST,
@@ -15,13 +15,13 @@ function sendMail(email, token){
     })
 
     let mailOptions = {
-        from: 'hrw@hotmail.co.uk',
-        to: email,
-        subject: 'Thank you for your enquiry',
-        text: 'Hello, Thank you for your enquiry to the Wedding creche, we will get back to asap using the contact details that you have provided. Have a good day from Harriet & Sinead at The Wedding Creche.  '
+        from: email,
+        to: process.env.USER,
+        subject: 'New enquiry',
+        text: 'New equiry from...  ' + name + ', telephone: ' + tel + ' message: ' + message 
     }
 
-    transporter.sendMail(mailOptions, function(err, info) {
+    transporter.sendMail(mailOptions, function(error, info) {
         if (error) {
             console.log(error)
         } else {
