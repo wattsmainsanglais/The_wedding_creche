@@ -1,8 +1,6 @@
 
 
 
-
-
 // JS for scrolling gallery 
 let scrollcontainer = document.querySelectorAll(".gallery-container");
 let backBtn = document.getElementById('backBtn');
@@ -68,7 +66,9 @@ const postContactForm = async (name, tel, email, message) => {
         if(response.ok){
             const jsonResponse = await response.json();
             modalContainer.innerText = jsonResponse;
-            clearData();
+            if (jsonResponse.includes('Thank you')){
+                clearData();
+            } 
            
         } else {
             modalContainer.innerText = 'Problem with server'
