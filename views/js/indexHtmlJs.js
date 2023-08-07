@@ -3,8 +3,9 @@
 
 // JS for scrolling gallery 
 let scrollcontainer = document.querySelectorAll(".gallery-container");
-let backBtn = document.getElementById('backBtn');
-let nextBtn = document.getElementById('nextBtn');
+let backBtn = document.querySelectorAll('.backBtn');
+let nextBtn = document.querySelectorAll('.nextBtn');
+
 
 
 
@@ -16,18 +17,38 @@ for(let i= 0 ; i < scrollcontainer.length; i++){
     item.scrollLeft += e.deltaY
     item.style.scrollBehavior = 'auto';
     })
+
+
+
+}
+
+for(let i=0; i <nextBtn.length ; i++){
+
+    nextBtn[i].addEventListener('click', () => {
+
+        for(let i= 0 ; i < scrollcontainer.length; i++){
+                
+            let item = scrollcontainer[i];
+                item.style.scrollBehavior = 'smooth';
+                item.scrollLeft += 600;
+        }   
+    })
+}
+
+for(let i=0; i <backBtn.length ; i++){
+
+    backBtn[i].addEventListener('click', () => {
+
+        for(let i= 0 ; i < scrollcontainer.length; i++){
+                
+            let item = scrollcontainer[i];
+                item.style.scrollBehavior = 'smooth';
+                item.scrollLeft -= 600;
+        }   
+    })
 }
 
 
-nextBtn.addEventListener('click', ()=> {
-    scrollcontainer.style.scrollBehavior = 'smooth';
-    scrollcontainer.scrollLeft += 600;
-})
-
-backBtn.addEventListener('click', ()=> {
-    scrollcontainer.style.scrollBehavior = 'smooth';
-    scrollcontainer.scrollLeft -= 600;
-})
 
 // function to clear form after post
 function clearData(){
