@@ -137,3 +137,37 @@ closeButton.addEventListener('click', () =>{
 
 
 
+// JS animations for FAQ slides
+
+const quest = document.getElementById('faq-question-one');
+              const one = document.querySelectorAll('.slide-one');
+              const two = document.querySelectorAll('.slide-two');
+            
+            
+              for(let i = 0; i < one.length ; i++){
+                let slide1 = one[i];
+                let slide2 = two[i];
+
+                slide1.addEventListener('mouseover', () => {
+                  slide1.style.display = 'none';
+                  slide1.style.opacity = '0';
+                  slide2.style.display = 'flex';
+
+              })
+              }
+
+              for(let i = 0; i < two.length ; i++){
+                let slide1 = one[i];
+                let slide2 = two[i];
+                
+                slide2.addEventListener('mouseout', () => {
+                  setTimeout ( () => {
+                    slide2.style.display = 'none';
+                    slide1.style.display = 'flex';
+                    slide1.style.opacity = '100';       
+                   }, 500)
+              
+                  })
+              
+              }
+            
