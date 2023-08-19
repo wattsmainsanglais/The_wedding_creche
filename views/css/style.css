@@ -299,7 +299,9 @@ nav{
 
 .meet-us-wrapper > aside > img {
   transition: 0.5s;
-  clip-path: circle(75% at 25% 25%)
+  clip-path: circle(75% at 25% 25%);
+  width: 350px;
+  height: 525px;
 }
 
 .meet-us-wrapper > aside > img:hover {
