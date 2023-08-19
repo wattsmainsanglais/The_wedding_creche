@@ -485,7 +485,13 @@ nav{
     grid-gap: 20px;
     padding: 10px;
     flex: none;
+    
 
+  }
+
+  .gallery-container div span{
+    align-items: center;
+    justify-content: center;
   }
   
 .gallery-container div img{
@@ -500,6 +506,8 @@ nav{
     cursor: pointer;
     transform: scale(1.1);
 }
+
+
 
 .nextBtn, .backBtn{
     width: 50px;
@@ -518,13 +526,13 @@ nav{
 #contact{
     grid-column: 1 / span 3;
     grid-row: 9 / 10;
-    background-color: bcf4de;
+  
     display: grid;
     justify-content: center;
-    width: 100%;
+    
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
-    background-color: #6bd4db60;
+   
 }
 
 .contact-header{
@@ -533,6 +541,7 @@ nav{
   display: flex;
   justify-content: center;
   margin-bottom: 1%;
+  
 }
 
 .form-wrapper{
@@ -543,6 +552,7 @@ nav{
   justify-content: center;
   align-items: center;
   border-right: 2px solid #ada8a4;
+  background-color: #6bd4db60;
 }
 
 .form-wrapper button{
@@ -588,6 +598,8 @@ nav{
 
 
 .social-media{
+  width: 100%;
+  height: 100%;
   grid-column: 2;
   grid-row: 2;
   display: flex;
@@ -595,6 +607,23 @@ nav{
   align-items: center;
   align-content: center;
   justify-content: flex-start;
+  
+  background-size: cover;
+  position: relative;
+  
+}
+
+.social-media::before{
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: url('../images/pop-up-creche.jpg');
+  background-size: cover;
+  filter: blur(2px)grayscale(60%);
+   ;
+  
+  position: absolute;
+
 }
 
 .social-media > article{
@@ -606,6 +635,7 @@ nav{
   align-content: center;
   flex-wrap: wrap;
   vertical-align: middle;
+  position: relative;
 }  
 
 @keyframes icondance {
