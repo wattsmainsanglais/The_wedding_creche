@@ -1,9 +1,13 @@
 {
   "name": "the_wedding_creche",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=18.14.2"
+  },
   "description": "Business homepage for the wedding creche",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
