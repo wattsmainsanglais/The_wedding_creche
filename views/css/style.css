@@ -730,7 +730,7 @@ nav{
   
 }
 
-.social-media > article > img:hover{
+.social-media > article > a > img:hover{
   
   animation: icondance .4s linear;
   animation-iteration-count: 1;
