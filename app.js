@@ -23,6 +23,11 @@ app.get('/', (req, res) => {
     res.render('../views/index');
 });
 
+
+app.get('/fr', (req, res) => {
+    res.render('../views/fr');
+})
+
 // route for handling contact form, email will be sent to the wedding creche
 app.post('/contact', (req, res, next) =>{
     
