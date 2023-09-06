@@ -89,8 +89,18 @@ nav{
   grid-column: 4;
   display: flex;
   justify-content: flex-end;
-  padding-right: 1%;
+  padding-right: 2%;
   
+}
+
+.language-toggle a p{
+  text-decoration: underline;
+  color: #654de9;
+  font-weight: 800;
+}
+
+.language-toggle p{
+  color: #aaa;
 }
 
 
