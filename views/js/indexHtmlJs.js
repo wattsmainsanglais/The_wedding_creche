@@ -170,4 +170,5 @@ const quest = document.getElementById('faq-question-one');
                   })
               
               }
-            
+
+              console.log('Welcome to the homepage of "The Wedding Creche", please do not enter anything into this console, this is how hackers can target you');

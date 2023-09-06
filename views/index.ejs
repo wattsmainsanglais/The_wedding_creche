@@ -95,46 +95,13 @@
 
       </p>
       </article>
-      <article class="what-we-do-scroller">
-        <div class="gallery-wrap" >
-          <img src="images/left-arrow.png" class="backBtn"> 
-          
-          <div class="gallery-container 2"> 
-            <div class="gallery-scroll">  
-              <span class="gallery-item">
-  
-                <img src= "images/holding-banner.jpg" />
-              </span>
-              <span class="gallery-item">
-  
-                <img class="gallery-img" src= "images/harriet-playing.jpg" />
-              </span>
-            </div>
-            <div class="gallery-scroll">  
-  
-              <span class="gallery-item">
-  
-                <img src= "images/sinead-playing.jpg" />
-              </span>
-              <span class="gallery-item">
-  
-                <img src= "images/all-playing-port.jpg" />
-              </span>
-            </div>
-          </div> 
-          
-          <img src="images/right-arrow.png" class="nextBtn"> 
-        </div>
-
-      </article>
+      <%- include('./partials/firstscroller') %>
     </section>
 
     <section id="meet-us">
       <h1>MEET US</h1>
       <div class="meet-us-wrapper">
-        <aside class="meet-us-aside1">
-          <img class="meet-us-img1" src="images/KL2_8385web.jpg" >
-        </aside>
+        <%- include('./partials/meetus-sinead') %>
             
         <article class="person">
         
@@ -166,9 +133,7 @@
 
           </div>  
         </article> 
-        <aside class="meet-us-aside2">
-          <img class="meet-us-img2" src="images/KL2_8487web.jpg">
-        </aside>
+        <%- include('./partials/meetus-harriet') %>
       </div>
     </section>
 
@@ -312,6 +277,6 @@
 </body>
 
 <script src="js/indexHtmlJs.js">
-  console.log('Welcome to the homepage of "The Wedding Creche", please do not enter anything into this console, this is how hackers can target you');
+  
 </script>
 </html>
