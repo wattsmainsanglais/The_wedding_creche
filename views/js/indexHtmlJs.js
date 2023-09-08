@@ -148,12 +148,21 @@ const quest = document.getElementById('faq-question-one');
                 let slide1 = one[i];
                 let slide2 = two[i];
 
+                if(window.innerWidth > 480){
+
                 slide1.addEventListener('mouseover', () => {
                   slide1.style.display = 'none';
                   slide1.style.opacity = '0';
                   slide2.style.display = 'flex';
 
-              })
+                }) 
+                } else {
+                    slide1.addEventListener('touchstart', () => {
+                    slide1.style.display = 'none';
+                    slide1.style.opacity = '0';
+                    slide2.style.display = 'flex';
+                    }
+                )}
               }
 
               for(let i = 0; i < two.length ; i++){
@@ -170,5 +179,5 @@ const quest = document.getElementById('faq-question-one');
                   })
               
               }
-
+              console.log("viewport width = " + window.innerWidth)
               console.log('Welcome to the homepage of "The Wedding Creche", please do not enter anything into this console, this is how hackers can target you');
