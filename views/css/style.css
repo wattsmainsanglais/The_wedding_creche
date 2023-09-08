@@ -540,7 +540,12 @@ nav{
 }
 
 .slide-one{
+  opacity: 100;
+  transition: 2s;
+}
 
+.slide-one-small{
+  opacity: 100;
   transition: 2s;
 }
 
@@ -556,8 +561,15 @@ nav{
   transition: 2s;
 }
 
-.slide-two:hover{
+.slide-two-small{
   opacity: 100;
+  display: none;
+  font-size: .9em;
+  transition: 2s;
+}
+
+.slide-two:hover{
+    opacity: 100;
   cursor: pointer;
 }
 
@@ -650,6 +662,7 @@ nav{
     
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
+    padding-bottom: 3%;
    
 }
 
@@ -672,6 +685,7 @@ nav{
   align-items: center;
   border-right: 2px solid #ada8a4;
   background-color: #8bffcf;
+  border-radius: 6px;
   
 }
 
@@ -1144,5 +1158,53 @@ footer{
     font-size: .9em;
     margin-bottom: 2%;
   }
+
+  .slide-two{
+    opacity: 100;
+    display: none;
+    font-size: .9em;
+    transition: 2s;
+  }
+
+  /* contact 480px css */
+
+  #contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .form-wrapper{
+    width: 90%;
+    padding: 3% 4%;
+    margin-top: 3%;
+  }
+
+  .form-wrapper button{
+    width: 25%;
+  }
+
+  .social-media{
+    height: 200px;
+    justify-content: center;
+  }
+
+  .social-media > article{
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+  }
+
+  .social-media > article a{
+    display: flex;
+    justify-content: center;
+  }
+
+  .social-media > article a img{
+    width: 60%;
+  }
+
+
 
 }

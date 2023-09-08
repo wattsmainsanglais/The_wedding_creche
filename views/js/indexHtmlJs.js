@@ -154,6 +154,7 @@ const quest = document.getElementById('faq-question-one');
                   slide1.style.display = 'none';
                   slide1.style.opacity = '0';
                   slide2.style.display = 'flex';
+               
 
                 }) 
                 } else {
@@ -161,6 +162,8 @@ const quest = document.getElementById('faq-question-one');
                     slide1.style.display = 'none';
                     slide1.style.opacity = '0';
                     slide2.style.display = 'flex';
+                    slide2.classList.remove('.slide-two:hover');
+                    slide2.classList.toggle('.slide-two-small');  
                     }
                 )}
               }
@@ -168,16 +171,34 @@ const quest = document.getElementById('faq-question-one');
               for(let i = 0; i < two.length ; i++){
                 let slide1 = one[i];
                 let slide2 = two[i];
-                
-                slide2.addEventListener('mouseout', () => {
-                  setTimeout ( () => {
-                    slide2.style.display = 'none';
-                    slide1.style.display = 'flex';
-                    slide1.style.opacity = '100';       
-                   }, 500)
+
+                if(window.innerWidth > 480){
+                    slide2.addEventListener('mouseout', () => {
+                        setTimeout ( () => {
+                        slide2.style.display = 'none';
+                        slide1.style.display = 'flex';
+                        slide1.style.opacity = '100'; 
+                        
+                    }, 500)
               
                   })
+                } else {
+                    slide2.addEventListener('touchend', () => {
+                        
+                        slide2.style.display = 'none';
+                        slide1.style.display = 'flex';
+                        slide1.style.opacity = '100'; 
+                        slide2.classList.remove('.slide-two:hover') 
+                        slide2.classList.toggle('.slide-two-small');     
+                    
+              
+                  })
+                }
+                
+              
               
               }
+    
+    
               console.log("viewport width = " + window.innerWidth)
-              console.log('Welcome to the homepage of "The Wedding Creche", please do not enter anything into this console, this is how hackers can target you');
+    console.log('Welcome to the homepage of "The Wedding Creche", please do not enter anything into this console, this is how hackers can target you');          
