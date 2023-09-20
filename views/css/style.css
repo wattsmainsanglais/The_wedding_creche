@@ -178,10 +178,10 @@ nav{
 
 .circles li:nth-child(1){
   left: 25%;
-  width: 80px;
-  height: 80px;
+  width: 65px;
+  height: 65px;
   animation-delay: 0s;
-  background-color: #8bffcf;
+  background-color: #bbdad2;
 }
 
 
@@ -191,15 +191,15 @@ nav{
   height: 70px;
   animation-delay: 2s;
   animation-duration: 12s;
-  background-color: #fcd39e;
+  background-color: #aaa299;
 }
 
 .circles li:nth-child(3){
   left: 35%;
-  width: 150px;
-  height: 150px;
+  width: 55px;
+  height: 55px;
   animation-delay: 7s;
-  background-color: #fcd39e;
+  background-color: #aaa299;
 }
 
 .circles li:nth-child(4){
@@ -208,7 +208,7 @@ nav{
   height: 25px;
   animation-delay: 15s;
   animation-duration: 45s;
-  background-color: #fcd39e;
+  background-color: #aaa299;
 }
 
 .circles li:nth-child(5){
@@ -217,16 +217,16 @@ nav{
   height: 15px;
   animation-delay: 2s;
   animation-duration: 35s;
-  background-color: #8bffcf;
+  background-color: #bbdad2;
 }
 
 .circles li:nth-child(6){
   left: 85%;
-  width: 150px;
-  height: 150px;
+  width: 45px;
+  height: 45px;
   animation-delay: 0s;
   animation-duration: 11s;
-  background-color: #fcd39e;
+  background-color: #aaa299;
 }
 
 .circles li:nth-child(7){
@@ -234,7 +234,7 @@ nav{
   width: 20px;
   height: 20px;
   animation-delay: 4s;
-  background-color: #8bffcf;
+  background-color: #bbdad2;
 }
 
 .circles li:nth-child(8){
@@ -243,7 +243,7 @@ nav{
   height: 60px;
   animation-delay: 0s;
   animation-duration: 18s;
-  background-color: #fcd39e;
+  background-color: #aaa299;
 }
 
 .circles li:nth-child(9){
@@ -251,15 +251,15 @@ nav{
   width: 20px;
   height: 20px;
   animation-delay: 0s;
-  background-color: #8bffcf
+  background-color: #bbdad2
 }
 
 .circles li:nth-child(10){
   left: 75%;
-  width: 110px;
-  height: 110px;
+  width: 70px;
+  height: 70px;
   animation-delay: 3s;
-  background-color: #8bffcf;
+  background-color: #bbdad2
 }
 
 
@@ -372,7 +372,7 @@ nav{
   grid-column: 2;
   grid-row: 1;
 
-  background: radial-gradient(circle, #8bffcf 0%, rgba(240,231,225,0.5004201509705445) 40%);
+  background: radial-gradient(circle, #bbdad2 0%, rgba(240,231,225,0.5004201509705445) 40%);
   
 }
 
@@ -380,7 +380,7 @@ nav{
   grid-column: 1;
   grid-row: 2;
   
-  background: radial-gradient(circle, #8bffcf 0%, rgba(240,231,225,0.5004201509705445) 40%);
+  background: radial-gradient(circle, #bbdad2 0%, rgba(240,231,225,0.5004201509705445) 40%);
   
 }
 
@@ -447,7 +447,7 @@ nav{
   width: 100%;
   text-align: center;
   color: black;
-  text-shadow: 1px 4px 30px #8bffcf;
+  text-shadow: 1px 4px 30px #bbdad2;
   
 
   background: rgba(182,182,182,0.9);
@@ -459,7 +459,7 @@ nav{
 .review{
   position: relative;
   z-index: 1;
-  background: radial-gradient(circle, #8bffcf 0%, rgba(240, 231, 225, 0.671) 30%);
+  background: radial-gradient(circle, #bbdad2 0%, rgba(240, 231, 225, 0.671) 30%);
   width: 45%;
   padding: 2%;
   font-style: italic;
@@ -523,7 +523,7 @@ nav{
 .two {
   grid-column: 2;
   grid-row: 1;
-  background: radial-gradient(circle, #8bffcf 0%, rgba(240, 231, 225, 0.671) 55%);
+  background: radial-gradient(circle, #bbdad2 0%, rgba(240, 231, 225, 0.671) 55%);
 }
 
 
@@ -531,7 +531,7 @@ nav{
 .three {
   grid-column: 1;
   grid-row: 2;
-  background: radial-gradient(circle, #8bffcf 0%, rgba(240, 231, 225, 0.671) 55%);
+  background: radial-gradient(circle, #bbdad2 0%, rgba(240, 231, 225, 0.671) 55%);
 }
 
 .four {
@@ -686,15 +686,15 @@ nav{
   justify-content: center;
   align-items: center;
   border-right: 2px solid #ada8a4;
-  background-color: #8bffcf;
+  background-color: #bbdad2;
   border-radius: 6px;
   
 }
 
 .form-wrapper, .social-media{
-  box-shadow:  -3px -6px 124px -40px #8bffcf;
-  -webkit-box-shadow: -3px -6px 124px -40px #8bffcf;
-  -moz-box-shadow: -3px -6px 124px -40px #8bffcf;
+  box-shadow:  -3px -6px 124px -40px #bbdad2;
+  -webkit-box-shadow: -3px -6px 124px -40px #bbdad2;
+  -moz-box-shadow: -3px -6px 124px -40px #bbdad2;
 }
 
 .form-wrapper button{
