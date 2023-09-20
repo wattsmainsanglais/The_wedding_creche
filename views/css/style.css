@@ -132,8 +132,8 @@ nav{
 }
 
 #splash article {
-  padding: 5%;
-  padding-top: 0;
+  padding: 7%;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,10 +146,10 @@ nav{
 }
 
 #splash article img{
-  width: 45%;
-  clip-path: ellipse(36% 39% at 51% 52%);
+  width: 40%;
+  
   z-index: 2;
-  filter: opacity(80%);
+  filter: opacity(100%);
 }
 
 
@@ -301,7 +301,7 @@ nav{
   margin-top: 2%;
   background-color: #fcd39e;
   padding: 3%;
-  border-radius: 5% 5%;
+  border-radius: 10px 10px;
 }
 
 /* Meet us section CSS */ 
@@ -459,7 +459,7 @@ nav{
 .review{
   position: relative;
   z-index: 1;
-  background-color: #8bffcf;
+  background: radial-gradient(circle, #8bffcf 0%, rgba(240, 231, 225, 0.671) 30%);
   width: 45%;
   padding: 2%;
   font-style: italic;
@@ -523,7 +523,7 @@ nav{
 .two {
   grid-column: 2;
   grid-row: 1;
-  background-color: #8bffcf;
+  background: radial-gradient(circle, #8bffcf 0%, rgba(240, 231, 225, 0.671) 55%);
 }
 
 
@@ -531,7 +531,7 @@ nav{
 .three {
   grid-column: 1;
   grid-row: 2;
-   background-color: #8bffcf;
+  background: radial-gradient(circle, #8bffcf 0%, rgba(240, 231, 225, 0.671) 55%);
 }
 
 .four {
