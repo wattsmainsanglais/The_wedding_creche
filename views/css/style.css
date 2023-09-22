@@ -311,7 +311,7 @@ nav{
 
 /* Meet us section CSS */ 
 #meet-us{
-  background-color: #f0e7e1;
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -322,8 +322,9 @@ nav{
 
 .meet-us-wrapper{
     width: 100%;
-    
-    padding: 1% 3%;
+    margin-top: 2%;
+    background-color: #f0e7e1;
+    padding: 3% 3%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr;
@@ -440,7 +441,7 @@ nav{
 
   background-image: url('../images/all-playing.jpg');
   background-size: cover;
-  filter: grayscale(100%);
+  /*filter: grayscale(100%);*/
 }
 
 
