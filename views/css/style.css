@@ -306,7 +306,7 @@ nav{
   margin-top: 2%;
   background-color: #bbdad2;
   padding: 3%;
-  border-radius: 10px 10px;
+ 
 }
 
 /* Meet us section CSS */ 
@@ -377,16 +377,17 @@ nav{
 .person{
   grid-column: 2;
   grid-row: 1;
-
-  background: radial-gradient(circle, #bbdad2 0%, rgba(240,231,225,0.5004201509705445) 40%);
+  background: rgba(240,231,225,0.5004201509705445) ;
+  /*background: radial-gradient(circle, #bbdad2 0%, rgba(240,231,225,0.5004201509705445) 40%);*/
   
 }
 
 .person2{
   grid-column: 1;
   grid-row: 2;
+  background-color: rgba(240,231,225,0.5004201509705445);
   
-  background: radial-gradient(circle, #bbdad2 0%, rgba(240,231,225,0.5004201509705445) 40%);
+  /*background: radial-gradient(circle, #bbdad2 0%, rgba(240,231,225,0.5004201509705445) 40%);*/
   
 }
 
@@ -465,7 +466,8 @@ nav{
 .review{
   position: relative;
   z-index: 1;
-  background: radial-gradient(circle, #bbdad2 0%, rgba(240, 231, 225, 0.836) 30%);
+  background: rgba(240, 231, 225, 0.884);
+  /*background: radial-gradient(circle, #bbdad2 0%, rgba(240, 231, 225, 0.836) 30%);*/
   width: 45%;
   padding: 2%;
   font-style: italic;
@@ -483,6 +485,7 @@ nav{
   margin-top: 3%;
   float: right;
   border-radius: 15px 0 0 15px;
+  margin-bottom: 3%;
 }
 
 /* FAQ css **/
@@ -697,11 +700,11 @@ nav{
   
 }
 
-.form-wrapper, .social-media{
+/*.form-wrapper, .social-media{
   box-shadow:  -3px -6px 124px -40px #bbdad2;
   -webkit-box-shadow: -3px -6px 124px -40px #bbdad2;
   -moz-box-shadow: -3px -6px 124px -40px #bbdad2;
-}
+}*/
 
 .form-wrapper button{
   font-family: 'Roboto', sans-serif;
@@ -767,7 +770,7 @@ nav{
   content: "";
   background-image: url('../images/KL2_7431web.jpg');
   background-size: cover;
-  filter: blur(1px)grayscale(80%);
+  /*filter: blur(1px)grayscale(80%);*/
    
   
   position: absolute;
