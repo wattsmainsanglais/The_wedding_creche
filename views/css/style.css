@@ -522,7 +522,7 @@ nav{
 
 .one{
  
-  background-color: #bbdad2;
+  background: radial-gradient(circle, rgba(240, 231, 225, 0.671) 0%, #bbdad2 55%);
   grid-column: 1;
   grid-row: 1;
   
@@ -543,11 +543,12 @@ nav{
   background: radial-gradient(circle, #bbdad2 0%, rgba(240, 231, 225, 0.671) 55%);
 }
 
+
 .four {
   grid-column: 2;
   grid-row: 2;
- 
-  background-color: #bbdad2;
+  background: radial-gradient(circle, rgba(240, 231, 225, 0.671) 0%, #bbdad2 55%);
+  
 }
 
 .slide-one{
