@@ -30,7 +30,12 @@ for(let i=0; i <nextBtn.length ; i++){
                 
             let item = scrollcontainer[i];
                 item.style.scrollBehavior = 'smooth';
-                item.scrollLeft += 600;
+                if(window.innerWidth > 480){
+                    item.scrollLeft += 600;
+                } else {
+                    item.scrollLeft += 200;
+                }
+                
         }   
     })
 }
@@ -43,7 +48,11 @@ for(let i=0; i <backBtn.length ; i++){
                 
             let item = scrollcontainer[i];
                 item.style.scrollBehavior = 'smooth';
-                item.scrollLeft -= 600;
+                if(window.innerWidth > 480){
+                    item.scrollLeft -= 600;
+                } else {
+                    item.scrollLeft -= 200;
+                }
         }   
     })
 }

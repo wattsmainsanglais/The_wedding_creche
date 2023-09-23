@@ -594,6 +594,7 @@ nav{
 
 /* Gallery + WHAT WE DO (scroller) CSS */
 #gallery{
+    margin: 2% 0 2% 0;
     grid-column: 1 / span 3;
     grid-row: 9 / 10;
   
@@ -604,11 +605,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 5% auto;
+    margin: 2% auto;
+    
 }
 
 .gallery-container{
-
+    padding-top: 5%;
+    padding-bottom: 5%;
     width: 90%;
     display: flex; 
     
@@ -1240,10 +1243,11 @@ footer{
   }
 
   .gallery-container{
-    width: 100%
+    width: 100%;
   }
 
   .gallery-container div{
+    width: 100%;
     grid-gap: 1%;
 
     
@@ -1269,7 +1273,7 @@ footer{
     transition: 2s;
   }
 
-  .three, .two {
+  .one, .four, .three, .two {
     background: #bbdad2;
   }
 
