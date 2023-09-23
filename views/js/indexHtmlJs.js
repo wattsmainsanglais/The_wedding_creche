@@ -66,7 +66,7 @@ function clearData(){
 
 //Js for contact form api/post details
 
-urlContact = 'http://localhost:4000/contact'
+urlContact = 'https://theweddingcreche-production.up.railway.app/contact'
 let modalContainer = document.getElementById('modal-p')
 let modalDiv= document.getElementById('modal');
 
