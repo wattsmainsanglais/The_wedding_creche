@@ -324,7 +324,7 @@ nav{
     width: 100%;
     margin-top: 2%;
     background-color: #f0e7e1;
-    padding: 3% 3%;
+    padding: 3% 3% 0 3%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr 1fr;
@@ -393,8 +393,8 @@ nav{
 
 .person div, .person2 div{
   display: flex;
-  align-items: center;
-  
+  align-items: flex-start;
+  padding-top: 10%;
 }
 
 /*.person div:hover {
@@ -415,12 +415,12 @@ nav{
 
 /* reviews css */
 
-.reviews-header{
+#reviews-header{
   grid-column: 2 / span 1;
     grid-row: 6 / 7;
     display: flex;
     justify-content: center;
-    padding-top: 14%;
+    padding-top: 16%;
 }
 
 #reviews{
