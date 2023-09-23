@@ -32,7 +32,7 @@ exports.handleContactForm= function(name, tel, email, message, cb){
             return cb(msg)
         } else{
             sendMail(cleanName, tel, email, cleanMessage)
-            return cb("Thank you " + name + " for your enquiry to The Wedding Creche, we'll be in contact soon")
+            return cb("Thank you " + name + " for your enquiry to The Pop-up Wedding Creche, we'll be in contact soon")
         }
     })
     

@@ -415,19 +415,26 @@ nav{
 
 /* reviews css */
 
-#reviews{
-    grid-column: 1 / span 3;
+.reviews-header{
+  grid-column: 2 / span 1;
     grid-row: 6 / 7;
+    display: flex;
+    justify-content: center;
+    padding-top: 14%;
 }
 
-/* Reviews CSS */
+#reviews{
+    grid-column: 1 / span 3;
+    grid-row: 7 / 8;
+}
+
 
 #reviews{
   position: relative;
   top: 0;
   
   padding: 0;
-  margin-top: 5%;
+  margin-top: 2%;
   width: 100%;
   
   background-size: cover;
@@ -447,7 +454,7 @@ nav{
 
 
 
-.reviews-header-wrapper{
+.reviews-wrapper{
   position: relative;
   padding-top: 6%;
   padding-bottom: 5%;
@@ -492,10 +499,10 @@ nav{
 
 #faq{
     padding-top: 6%;
-    margin-top: 5%;
+    
     padding-bottom: 5%;
     grid-column: 1 / span 3;
-    grid-row: 7/ 8;
+    grid-row: 8/ 9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -588,7 +595,7 @@ nav{
 /* Gallery + WHAT WE DO (scroller) CSS */
 #gallery{
     grid-column: 1 / span 3;
-    grid-row: 8 / 9;
+    grid-row: 9 / 10;
   
 
 }
@@ -667,7 +674,7 @@ nav{
 #contact{
   padding-top: 4%;
     grid-column: 1 / span 3;
-    grid-row: 9 / 10;
+    grid-row: 10 / 11;
   
     display: grid;
     justify-content: center;
@@ -891,7 +898,7 @@ nav{
 
 footer{
     grid-column: 1 / span 3;
-    grid-row: 10 / 11;
+    grid-row: 11 / 12;
     font-size: .9em;
     display: flex;
     justify-content: flex-end;
