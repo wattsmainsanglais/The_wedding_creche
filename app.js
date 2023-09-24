@@ -11,7 +11,7 @@ const handler = require('./Private/serverJs/handleContact')
 app.use(function (req, res, next) {
     res.setHeader(
       'Content-Security-Policy',
-        "default-src 'self'; font-src 'self' https://fonts.gstatic.com ; img-src 'self' 'unsafe-inline' ; script-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com ; style-src 'self'; frame-src 'self'; connect-src http://localhost:4000 https://theweddingcreche-production.up.railway.app/ ; worker-src blob:; child-src blob:"
+        "default-src 'self'; font-src 'self' https://fonts.gstatic.com ; img-src 'self' 'unsafe-inline' ; script-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com ; style-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com; frame-src 'self'; connect-src http://localhost:4000 https://theweddingcreche-production.up.railway.app/ ; worker-src blob:; child-src blob:"
     );
     res.setHeader('X-Content-Type-Options', 'nosniff');
   
