@@ -1395,9 +1395,28 @@ footer{
   }
 
   .form-wrapper{
+    display: flex;
+    justify-content: center;
     width: 90%;
     padding: 3% 4%;
     margin-top: 3%;
+  }
+
+  #contactForm{
+ 
+    width: 70%;
+  }
+
+  #contactForm input{
+    width: 60%;
+  }
+
+  #contactForm textarea{
+    width: 100%;
+  }
+
+  #contactForm h2{
+    font-size: 1.2em;
   }
 
   .form-wrapper button{
@@ -1468,6 +1487,15 @@ footer{
 
 .faq-wrapper{
   grid-template-rows: 430px 420px;
+}
+
+#contactForm{
+ width: 80%;
+  padding: 3%;
+}
+
+#contactForm textarea{
+  width: 100%;
 }
 
 }
