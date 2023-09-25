@@ -78,7 +78,8 @@ const postContactForm = async (name, tel, email, message) => {
         'name': name,
         'telephone': tel,
         'email': email,
-        'message': message
+        'message': message,
+        'url': window.location.href
     })
 
     try{

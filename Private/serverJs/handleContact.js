@@ -24,7 +24,8 @@ vaildateContactForm = function(tel, email, cb){
 
 }
 
-exports.handleContactForm= function(name, tel, email, message, cb){
+exports.handleContactForm= function(name, tel, email, message, url, cb){
+    console.log(url);
     const cleanName = validator.escape(name);
     const cleanMessage = validator.escape(message);
     vaildateContactForm(tel, email, function(msg){
