@@ -66,7 +66,7 @@ function clearData(){
 
 //Js for contact form api/post details
 
-urlContact = 'https://theweddingcreche-production.up.railway.app/contact'
+urlContact = 'https://www.thepopupweddingcreche.fr/contact'
 let modalContainer = document.getElementById('modal-p')
 let modalDiv= document.getElementById('modal');
 
