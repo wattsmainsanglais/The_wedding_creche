@@ -19,7 +19,7 @@ function sendMail(name, tel, email, message){
         from: email,
         to: process.env.USER,
         subject: 'New enquiry',
-        text: 'New equiry from...  ' + name + ', telephone: ' + tel + ' message: ' + message 
+        text: 'New equiry from...  ' + name + ', telephone: ' + tel + ' message: ' + message + 'email: ' + email
     }
 
     transporter.sendMail(mailOptions, function(error, info) {
