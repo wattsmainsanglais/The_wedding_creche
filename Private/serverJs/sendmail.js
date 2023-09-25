@@ -3,7 +3,7 @@ require('dotenv').config();
 
 
 function sendMail(name, tel, email, message){
-
+    console.log(process.env.HOST)
     let transporter = nodemailer.createTransport({
         host: process.env.HOST,
         port: 587,
