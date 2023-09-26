@@ -51,10 +51,10 @@ app.get('/fr', (req, res) => {
 // route for handling contact form, email will be sent to the wedding creche
 app.post('/contact', (req, res, next) =>{
     
-    let {name, telephone, email, message} = req.body;
+    let {name, telephone, email, message, url} = req.body;
     console.log(email);
     try{
-    handler.handleContactForm(name, telephone, email, message, function(msg){
+    handler.handleContactForm(name, telephone, email, message, url, function(msg){
         res.status(201).send(JSON.stringify(msg))
         console.log(msg)
     })
