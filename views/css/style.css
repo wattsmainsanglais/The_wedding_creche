@@ -903,6 +903,7 @@ footer{
     grid-row: 11 / 12;
     font-size: .9em;
     display: flex;
+    text-align: right;
     justify-content: flex-end;
 }
 
