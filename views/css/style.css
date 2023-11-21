@@ -311,7 +311,7 @@ nav{
 
 .what-we-do-info > p{
   
-  background-color: #bbdad2;
+  background-color: #c8e6e0;
   padding: 3%;
   display: grid;
 
@@ -531,7 +531,7 @@ nav{
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 410px 400px;
+  grid-template-rows: 460px 430px;
  
 }
 
@@ -545,9 +545,10 @@ nav{
 
 .one{
  
-  background: radial-gradient(circle, rgba(240, 231, 225, 0.671) 0%, #bbdad2 55%);
+  background: url('../images/BlueSplog.png');
   grid-column: 1;
   grid-row: 1;
+  
   
 }
 
@@ -555,7 +556,7 @@ nav{
 .two {
   grid-column: 2;
   grid-row: 1;
-  background: radial-gradient(circle, #bbdad2 0%, rgba(240, 231, 225, 0.671) 55%);
+  background: url('../images/TealSplog.png');
 }
 
 
@@ -563,7 +564,7 @@ nav{
 .three {
   grid-column: 1;
   grid-row: 2;
-  background: radial-gradient(circle, #bbdad2 0%, rgba(240, 231, 225, 0.671) 55%);
+  background: url('../images/TealSplog.png');
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 90% 10%;
@@ -592,7 +593,7 @@ nav{
 .four {
   grid-column: 2;
   grid-row: 2;
-  background: radial-gradient(circle, rgba(240, 231, 225, 0.671) 0%, #bbdad2 55%);
+  background: url('../images/BlueSplog.png')
   
 }
 
@@ -616,6 +617,7 @@ nav{
   display: none;
   font-size: .9em;
   transition: 2s;
+  padding: 5% 8% 1% 12%;
 }
 
 .slide-two-small{
@@ -744,7 +746,7 @@ nav{
   justify-content: center;
   align-items: center;
   border-right: 2px solid #ada8a4;
-  background-color: #bbdad2;
+  background-color: #c8e6e0;
   border-radius: 6px;
   
 }
@@ -1324,7 +1326,7 @@ footer{
   }
 
   .one, .four, .three, .two {
-    background: #bbdad2;
+    background: #c8e6e0;
   }
 
   .bunny-good{
