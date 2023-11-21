@@ -132,7 +132,7 @@ nav{
 }
 
 #splash article {
-  padding: 7% 7% 4% 7%;
+  padding: 2% 7% 4% 7%;
   
   display: flex;
   flex-direction: column;
@@ -147,7 +147,7 @@ nav{
 }
 
 #splash article img{
-  width: 40%;
+  width: 55%;
   
   z-index: 2;
   filter: opacity(100%);
