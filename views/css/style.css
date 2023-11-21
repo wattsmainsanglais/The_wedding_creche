@@ -1216,6 +1216,10 @@ footer{
     
   }
 
+  .blocks{
+    max-width: 45px;
+  }
+
 /* meet us 480 media css */
 
   .meet-us-wrapper{
@@ -1323,6 +1327,11 @@ footer{
     background: #bbdad2;
   }
 
+  .bunny-good{
+    display: none;
+    max-width: 45px;
+  }
+
   /* contact 480px css */
 
   #contact{
@@ -1336,8 +1345,10 @@ footer{
 
   .form-wrapper{
     width: 100%;
-    padding: 3% 4%;
+    padding: 3% 0%;
     margin-top: 3%;
+    display: flex;
+    justify-content: center;
   }
 
   .form-wrapper h2{
@@ -1349,7 +1360,7 @@ footer{
   }
 
   #contactForm{
-    width: 80%;
+    width: 70%;
   }
 
   .social-media{
@@ -1411,6 +1422,11 @@ footer{
 
   .one, .four, .three, .two {
     background: #bbdad2;
+  }
+
+  .bunny-good{
+    display: none;
+    max-width: 45px;
   }
 
   /* Galleries css media 820 width */
