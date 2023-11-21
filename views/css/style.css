@@ -573,7 +573,7 @@ nav{
 
 
 .faqToy{
-  max-width: 75px;
+  max-width: 100px;
 }
 
 
@@ -591,6 +591,7 @@ nav{
   align-items: center;
   opacity: 100;
   transition: 2s;
+  font-size: 1.1em;
 }
 
 .slide-one-small{
