@@ -303,11 +303,26 @@ nav{
 
 }
 
-.what-we-do-info p{
-  margin-top: 2%;
+.what-we-do-info > aside{
+  display: flex;
+  width: 99%;
+  justify-content: flex-end;
+}
+
+.what-we-do-info > p{
+  
   background-color: #bbdad2;
   padding: 3%;
+  display: grid;
+
  
+}
+
+
+
+
+.blocks{
+  max-width: 75px;
 }
 
 /* Meet us section CSS */ 
@@ -549,6 +564,28 @@ nav{
   grid-column: 1;
   grid-row: 2;
   background: radial-gradient(circle, #bbdad2 0%, rgba(240, 231, 225, 0.671) 55%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90% 10%;
+  padding-left: 0;
+  
+}
+
+.three > div{
+  grid-row: 1 / span 1;
+  display: flex;
+  justify-content: center;
+  padding-left: 3%;
+}
+
+.three > aside{
+  grid-row: 2 / span 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bunny-good{
+  max-width: 75px;
 }
 
 
