@@ -303,10 +303,10 @@ nav{
 
 }
 
-.what-we-do-info > aside{
+.what-we-do-info > h1{
   display: flex;
-  width: 99%;
-  justify-content: flex-end;
+  justify-content: center;
+  padding-bottom: 3% ;
 }
 
 .what-we-do-info > p{
@@ -531,7 +531,7 @@ nav{
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 580px 540px;
+  grid-template-rows: 520px 500px;
  
 }
 
@@ -545,7 +545,7 @@ nav{
 
 .one{
  
-  background: url('../images/BlueSplog.png');
+  background: url('../images/hBlueSplog.jpg');
   background-size: cover;
   grid-column: 1;
   grid-row: 1;
@@ -557,7 +557,7 @@ nav{
 .two {
   grid-column: 2;
   grid-row: 1;
-  background: url('../images/TealSplog.png');
+  background: url('../images/hPinkSplog.png');
   background-size: cover;
 }
 
@@ -566,30 +566,13 @@ nav{
 .three {
   grid-column: 1;
   grid-row: 2;
-  background: url('../images/TealSplog.png');
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 90% 10%;
-  padding-left: 0;
+  background: url('../images/hPinkSplog.png');
   background-size: cover;
   
 }
 
-.three > div{
-  grid-row: 1 / span 1;
-  display: flex;
-  justify-content: center;
-  padding-left: 3%;
-  
-}
 
-.three > aside{
-  grid-row: 2 / span 1;
-  display: flex;
-  justify-content: flex-start;
-}
-
-.bunny-good{
+.faqToy{
   max-width: 75px;
 }
 
@@ -597,12 +580,15 @@ nav{
 .four {
   grid-column: 2;
   grid-row: 2;
-  background: url('../images/BlueSplog.png');
+  background: url('../images/hBlueSplog.jpg');
   background-size: cover;
   
 }
 
 .slide-one{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   opacity: 100;
   transition: 2s;
 }
@@ -620,9 +606,9 @@ nav{
 .slide-two{
   opacity: 0;
   display: none;
-  font-size: .9em;
+  font-size: .8em;
   transition: 2s;
-  padding: 15% 8% 1% 8%;
+  padding: 10% 10% 1% 20%;
 }
 
 .slide-two-small{
