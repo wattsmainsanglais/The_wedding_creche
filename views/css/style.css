@@ -540,7 +540,7 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3%;
+  padding: 5%;
 }
 
 .one{
@@ -602,6 +602,10 @@ nav{
 .slide-one:hover{
   transition: 2s;
   cursor: pointer;
+}
+
+.slide-one > h2 {
+  padding-bottom: 7%;
 }
 
 .slide-two{
@@ -1321,8 +1325,8 @@ footer{
     background: #c8e6e0;
   }
 
-  .bunny-good{
-    display: none;
+  .faqToy{
+    
     max-width: 45px;
   }
 
