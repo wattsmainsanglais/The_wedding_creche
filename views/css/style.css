@@ -546,7 +546,7 @@ nav{
 .one{
  
   background: url('../images/hBlueSplog.jpg');
-  background-size: cover;
+  background-size: 100% 100%;
   grid-column: 1;
   grid-row: 1;
   
@@ -558,7 +558,7 @@ nav{
   grid-column: 2;
   grid-row: 1;
   background: url('../images/hPinkSplog.png');
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 
@@ -567,7 +567,7 @@ nav{
   grid-column: 1;
   grid-row: 2;
   background: url('../images/hPinkSplog.png');
-  background-size: cover;
+  background-size: 100% 100%;
   
 }
 
@@ -581,7 +581,7 @@ nav{
   grid-column: 2;
   grid-row: 2;
   background: url('../images/hBlueSplog.jpg');
-  background-size: cover;
+  background-size: 100% 100%;
   
 }
 
@@ -592,6 +592,7 @@ nav{
   opacity: 100;
   transition: 2s;
   font-size: 1.1em;
+  padding-top: 5%;
 }
 
 .slide-one-small{
@@ -613,7 +614,7 @@ nav{
   display: none;
   font-size: .8em;
   transition: 2s;
-  padding: 10% 10% 1% 20%;
+  padding: 5% 10% 1% 20%;
 }
 
 .slide-two-small{
@@ -1319,6 +1320,7 @@ footer{
     display: none;
     font-size: .9em;
     transition: 2s;
+    padding: 5% 5% 1% 5%;
   }
 
   .one, .four, .three, .two {
