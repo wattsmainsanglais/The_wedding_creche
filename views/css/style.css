@@ -132,7 +132,7 @@ nav{
 }
 
 #splash article {
-  padding: 7% 7% 4% 7%;
+  padding: 2% 7% 4% 7%;
   
   display: flex;
   flex-direction: column;
@@ -147,7 +147,7 @@ nav{
 }
 
 #splash article img{
-  width: 40%;
+  width: 55%;
   
   z-index: 2;
   filter: opacity(100%);
@@ -303,11 +303,26 @@ nav{
 
 }
 
-.what-we-do-info p{
-  margin-top: 2%;
-  background-color: #bbdad2;
+.what-we-do-info > h1{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3% ;
+}
+
+.what-we-do-info > p{
+  
+  background-color: #c8e6e0;
   padding: 3%;
+  display: grid;
+
  
+}
+
+
+
+
+.blocks{
+  max-width: 75px;
 }
 
 /* Meet us section CSS */ 
@@ -516,7 +531,7 @@ nav{
   width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 410px 400px;
+  grid-template-rows: 520px 500px;
  
 }
 
@@ -525,14 +540,16 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 3%;
+  padding: 5%;
 }
 
 .one{
  
-  background: radial-gradient(circle, rgba(240, 231, 225, 0.671) 0%, #bbdad2 55%);
+  background: url('../images/hBlueSplog.jpg');
+  background-size: 100% 100%;
   grid-column: 1;
   grid-row: 1;
+  
   
 }
 
@@ -540,7 +557,8 @@ nav{
 .two {
   grid-column: 2;
   grid-row: 1;
-  background: radial-gradient(circle, #bbdad2 0%, rgba(240, 231, 225, 0.671) 55%);
+  background: url('../images/hPinkSplog.png');
+  background-size: 100% 100%;
 }
 
 
@@ -548,20 +566,33 @@ nav{
 .three {
   grid-column: 1;
   grid-row: 2;
-  background: radial-gradient(circle, #bbdad2 0%, rgba(240, 231, 225, 0.671) 55%);
+  background: url('../images/hPinkSplog.png');
+  background-size: 100% 100%;
+  
+}
+
+
+.faqToy{
+  max-width: 100px;
 }
 
 
 .four {
   grid-column: 2;
   grid-row: 2;
-  background: radial-gradient(circle, rgba(240, 231, 225, 0.671) 0%, #bbdad2 55%);
+  background: url('../images/hBlueSplog.jpg');
+  background-size: 100% 100%;
   
 }
 
 .slide-one{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   opacity: 100;
   transition: 2s;
+  font-size: 1.1em;
+  padding-top: 5%;
 }
 
 .slide-one-small{
@@ -574,11 +605,16 @@ nav{
   cursor: pointer;
 }
 
+.slide-one > h2 {
+  padding-bottom: 7%;
+}
+
 .slide-two{
   opacity: 0;
   display: none;
-  font-size: .9em;
+  font-size: .8em;
   transition: 2s;
+  padding: 5% 10% 1% 20%;
 }
 
 .slide-two-small{
@@ -707,7 +743,7 @@ nav{
   justify-content: center;
   align-items: center;
   border-right: 2px solid #ada8a4;
-  background-color: #bbdad2;
+  background-color: #c8e6e0;
   border-radius: 6px;
   
 }
@@ -1179,6 +1215,10 @@ footer{
     
   }
 
+  .blocks{
+    max-width: 45px;
+  }
+
 /* meet us 480 media css */
 
   .meet-us-wrapper{
@@ -1280,10 +1320,16 @@ footer{
     display: none;
     font-size: .9em;
     transition: 2s;
+    padding: 5% 5% 1% 5%;
   }
 
   .one, .four, .three, .two {
-    background: #bbdad2;
+    background: #c8e6e0;
+  }
+
+  .faqToy{
+    
+    max-width: 45px;
   }
 
   /* contact 480px css */
@@ -1299,8 +1345,10 @@ footer{
 
   .form-wrapper{
     width: 100%;
-    padding: 3% 4%;
+    padding: 3% 0%;
     margin-top: 3%;
+    display: flex;
+    justify-content: center;
   }
 
   .form-wrapper h2{
@@ -1312,7 +1360,8 @@ footer{
   }
 
   #contactForm{
-    width: 80%;
+
+    width: 70%;
   }
 
   .social-media{
@@ -1374,6 +1423,11 @@ footer{
 
   .one, .four, .three, .two {
     background: #bbdad2;
+  }
+
+  .bunny-good{
+    display: none;
+    max-width: 45px;
   }
 
   /* Galleries css media 820 width */
