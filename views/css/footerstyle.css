@@ -1,0 +1,92 @@
+
+footer{
+    grid-column: 1 / span 3;
+    grid-row: 11 / 12;
+    font-size: .9em;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.siteDetails{
+    padding: 0 1% 0 0;
+    text-align: right;
+}
+
+.footerLogosSection{
+    padding: 0 0 0 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.footerLogosSection > a{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+}
+
+.footerLogo{
+    width: 72px;
+    height: auto;
+}
+
+.footerLogo:hover{
+    cursor: pointer;
+}
+
+.wattsLink {
+    font-family: 'Genos', sans-serif;
+    font-weight: 800;
+    font-size: 1.2em;
+    
+
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #654de9; /* the color */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#6b59d4d2 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+  }
+  .wattsLink:hover {
+    cursor: url;
+    --_p: 100%;
+    --_s: .3s;
+  }
+
+  @media only screen and (max-width: 480px) {
+
+    footer{
+        font-size: .6em;
+    }
+
+
+    .footerLogo{
+        width: 40px;
+    }
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 800) {
+    
+    footer{
+        font-size: .8em;
+    }
+
+
+    .footerLogo{
+        width: 52px;
+    }
+  }
+
+
+  
