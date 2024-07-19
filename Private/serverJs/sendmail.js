@@ -1,17 +1,7 @@
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
-const clientText = `We are now into the busy wedding season and our small team are out focusing our attention on high quality childcare for the children we are looking after. We have intermittent access to emails and our time in the office is now limited until the end of September.
 
-Rest assured, if you are enquiring for 2025, we have received your email and will get back to you, as soon as we are back in the office in October, to give your message the attention it deserves. In the meantime please view the attachments to read more about our services and to ensure we have all the details we need to provide you with a quote.
-
-If your enquiry is for this Summer we are fully booked for large groups, however would be happy to discuss childcare for 1 or 2 children if we have availability.
-
-Many thanks for your patience at this busy time and we look forward to discussing how we can help you.
-
-Best wishes,
-
-Harriet and Sinead`
 
 
 function sendMail(name, tel, email, message){
@@ -37,7 +27,19 @@ function sendMail(name, tel, email, message){
         }
     });
 
+    const clientText = `Thank you ${name} for your message.
 
+        We are now into the busy wedding season and our small team are out focusing our attention on high quality childcare for the children we are looking after. We have intermittent access to emails and our time in the office is now limited until the end of September.
+
+        Rest assured, if you are enquiring for 2025, we have received your email and will get back to you, as soon as we are back in the office in October, to give your message the attention it deserves. In the meantime please view the attachments to read more about our services and to ensure we have all the details we need to provide you with a quote.
+
+        If your enquiry is for this Summer we are fully booked for large groups, however would be happy to discuss childcare for 1 or 2 children if we have availability.
+
+        Many thanks for your patience at this busy time and we look forward to discussing how we can help you.
+
+        Best wishes,
+
+        Harriet and Sinead`
 
     let mailOptions = {
         from: email,
@@ -50,11 +52,11 @@ function sendMail(name, tel, email, message){
         from: process.env.USER,
         to: email,
         subject: 'Thank you for you enquiry',
-        text: 'Thank you ' + name + ' for your message. ' + clientText,
+        text: clientText,
         attachments: [
             {
                 filename: 'New-Enquiry-1.png',
-                path: 'https://www.thepopupweddingcreche.fr/images/New-Enquiry-2.png'
+                path: 'https://www.thepopupweddingcreche.fr/images/New-Enquiry-1.png'
             },
             {
                 filename: 'New-Enquiry-2.png',
