@@ -47,7 +47,7 @@ exports.handleContactForm= function(name, tel, email, message, url, cb){
         } else{
             sendMail(cleanName, tel, email, cleanMessage)
             if(url === 'https://www.thepopupweddingcreche.fr/fr'){
-                return cb("Merci por votre demande " + name + ". Nous vous contacterons bientôt")
+                return cb("Merci pour votre demande " + name + ". Nous vous contacterons bientôt")
             } else {
                 return cb("Thank you " + name + " for your enquiry to The Pop-up Wedding Creche, we'll be in contact soon")
             }

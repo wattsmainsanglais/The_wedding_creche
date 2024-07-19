@@ -11,16 +11,19 @@ const handler = require('./Private/serverJs/handleContact')
 app.use(function (req, res, next) {
     res.setHeader(
       'Content-Security-Policy',
-        "default-src 'self'; font-src 'self' https://fonts.gstatic.com ; img-src 'self' 'unsafe-inline' ; script-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com https://www.thepopupweddingcreche.fr ; style-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com; frame-src 'self'; connect-src http://localhost:4000 https://theweddingcreche-production.up.railway.app/ https://www.thepopupweddingcreche.fr ; worker-src blob:; child-src blob:"
+        "default-src 'self'; font-src 'self' https://fonts.gstatic.com ; img-src 'self' 'unsafe-inline' ; script-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com https://www.thepopupweddingcreche.fr https://thepopupweddingcreche.fr http://localhost:4000 ; style-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com; frame-src 'self'; connect-src http://localhost:4000 https://theweddingcreche-production.up.railway.app/ https://www.thepopupweddingcreche.fr https://thepopupweddingcreche.fr ; worker-src blob:; child-src blob:"
     );
     res.setHeader('X-Content-Type-Options', 'nosniff');
   
+    
+
+    const allowedOrigins = ['https://theweddingcreche-production.up.railway.app/', 'https://www.thepopupweddingcreche.fr', 'https://thepopupweddingcreche.fr', 'http://localhost:4000/'];
   
-    const allowedOrigins = ['https://theweddingcreche-production.up.railway.app/', 'https://www.thepopupweddingcreche.fr'];
     const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {
          res.setHeader('Access-Control-Allow-Origin', origin);
     }
+  
   
   
     res.setHeader('Access-Control-Allow-Headers', '*');
