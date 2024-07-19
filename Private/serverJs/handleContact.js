@@ -38,7 +38,7 @@ vaildateContactForm = function(tel, email, url, cb){
 }
 
 exports.handleContactForm= function(name, tel, email, message, url, cb){
-    console.log(url);
+    
     const cleanName = validator.escape(name);
     const cleanMessage = validator.blacklist(message, "<>[]{}" );
     vaildateContactForm(tel, email, url, function(msg){
