@@ -17,14 +17,14 @@ app.use(function (req, res, next) {
   
     
 
-    const allowedOrigins = ['https://theweddingcreche-production.up.railway.app/', 'https://www.thepopupweddingcreche.fr', 'https://thepopupweddingcreche.fr', 'http://localhost:4000/'];
+    const allowedOrigins = ['https://theweddingcreche-production.up.railway.app/', 'https://www.thepopupweddingcreche.fr', 'https://thepopupweddingcreche.fr', 'http://localhost:4000'];
   
     const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {
          res.setHeader('Access-Control-Allow-Origin', origin);
     }
   
-  
+
   
     res.setHeader('Access-Control-Allow-Headers', '*');
     res.setHeader('Access-Control-Allow-Credentials', 'true');
