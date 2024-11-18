@@ -89,7 +89,7 @@ const postContactForm = async (name, tel, email, message) => {
             body: data,
 
             headers: {
-                'Content-type': 'application/json',  
+                'Content-type': 'text/html',  
             }
         })
 
